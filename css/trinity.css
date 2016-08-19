@@ -16,6 +16,11 @@ p {
 p.large {
   font-size: 16px;
 }
+
+ul.large {
+  font-size: 16px;
+}
+
 a,
 a:hover,
 a:focus,
@@ -45,7 +50,7 @@ h6 {
 }
 
 .navbar-custom .navbar-brand {
-  color: #0067B2;
+  color: #FFFFFF;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 
@@ -64,8 +69,8 @@ h6 {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: white;
-  background-color: #3BB8E8;
-  border-color: #3BB8E8;
+  background-color: #0067B2;
+  border-color: #0067B2;
 }
 
 .btn-primary.disabled,
@@ -150,8 +155,6 @@ fieldset[disabled] .btn-primary.active {
 	text-transform: capitalize;
 	font-size: 22px;
 	padding-top: 15px;
-
-
 }
 
 .navbar-custom {
@@ -159,14 +162,14 @@ fieldset[disabled] .btn-primary.active {
   border-color: transparent;
 }
 .navbar-custom .navbar-brand {
-  color: #0067B2;
+  color: #FFFFFF;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, cursive;
 }
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
-  color: #3BB8E8;
+  color: #0067B2;
 }
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
@@ -182,8 +185,9 @@ fieldset[disabled] .btn-primary.active {
 
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
-  background-color: #0067B2;
+  background-color:  #3BB8E8;
 }
+
 .navbar-custom .nav li a {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -309,6 +313,10 @@ header .intro-text .intro-heading {
   }
 }
 
+.panel-default>.panel-heading {
+	color: #0067B2;
+}
+
 footer span.copyright {
   line-height: 40px;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -360,9 +368,6 @@ img::selection {
 img::-moz-selection {
   background: transparent;
 }
-body {
-  webkit-tap-highlight-color: #3BB8E8;
-}
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   background: #0067B2;
@@ -377,7 +382,7 @@ body {
 
 section#contact {
   background-color: #68696B;
-  background-image: url('../img/map-image.png');
+  background-image: url('../img/campanile-outline.png');
   background-position: center;
   background-repeat: no-repeat;
 }
