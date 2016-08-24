@@ -1,18 +1,4 @@
 <?php
- 
-$sql="INSERT INTO nametable (email, message)
-VALUES
-('$_POST[email]','$_POST[lmessage]')";
- 
-if (!mysql_query($sql,$con))
-  {
-  die('Error: ' . mysql_error());
-  }
-echo "1 record added";
- 
-mysql_close($con)    
-
-
 if(empty($_POST['name'])      ||
    empty($_POST['email'])     ||
    empty($_POST['phone'])     ||
@@ -33,33 +19,32 @@ $to = 'jiegan@tcd.ie'; // Add your email address inbetween the '' replacing your
 $email_subject = "Website Contact Form:  $name";
 $email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nPhone: $phone\n\nMessage:\n$message";
 $headers = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
-$headers .= "Reply-To: $email_address";  
+$headers .= "Reply-To: $email_address";   
 // Don't send email yet. Only send if both DB works and email
- 
+
 // Check for empty fields
 $servername = "localhost";
 $username = "vruser";
 $password = "idmteam4";
 $dbname = "vr";
- 
+
 // Create Connection to db
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check the connection
 if ($conn->connect_error) {
-    return false;
+	return false;
 }
- 
+
 // Prepare statement and bind values
 $stmt = $conn->prepare("INSERT INTO Messages (name, email, phone, message) VALUES (?, ?, ?, ?)");
- 
+
 $stmt->bind_param("ssss", $name, $email_address, $phone, $message);
 $stmt->execute();
 $stmt->close();
 $conn->close();
- 
+
 // DB INSERT worked, now send the email
 mail($to,$email_subject,$email_body,$headers);
- 
-return true;  
-?>
 
+return true;   
+?>
