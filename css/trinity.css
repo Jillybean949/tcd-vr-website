@@ -332,6 +332,10 @@ header .intro-text .intro-heading {
 	color: #0067B2;
 }
 
+.panel-default {
+  background-color: #E5E5E5;
+}
+
 footer span.copyright {
   line-height: 40px;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -395,22 +399,64 @@ img::-moz-selection {
   -moz-transition: all ease 0.5s;
 }
 
-section#contact {
-  background-color: #68696B;
-  background-image: url('../img/campanile-outline.png');
+section#faq {
+  background-color: #444444;
+  background-image: url('../img/campanile-outline4.png');
   background-position: center;
   background-repeat: no-repeat;
   max-width: 100%;
-  object-fit: contain;
+  background-size: cover;
 }
 
+section#faq .section-heading {
+  color: white;
+}
+section#faq .form-group {
+  margin-bottom: 25px;
+}
+section#faq .form-group input,
+section#faq .form-group textarea {
+  padding: 20px;
+}
+section#faq .form-group input.form-control {
+  height: auto;
+}
+section#faq .form-group textarea.form-control {
+  height: 236px;
+}
+section#faq .form-control:focus {
+  border-color: #fed136;
+  box-shadow: none;
+}
+section#faq ::-webkit-input-placeholder {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #E8E8E8;
+}
+section#faq :-moz-placeholder {
+  /* Firefox 18- */
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #E8E8E8;
+}
+section#faq ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #E8E8E8;
+}
+section#faq :-ms-input-placeholder {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #E8E8E8;
+}
 footer span.copyright {
   line-height: 40px;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-transform: none;
-}
-
-section#about {
-  margin-bottom: 50px;
 }

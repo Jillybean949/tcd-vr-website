@@ -1,5 +1,8 @@
 <?php
-// Check for empty fields
+
+
+
+
 if(empty($_POST['name'])      ||
    empty($_POST['email'])     ||
    empty($_POST['phone'])     ||
@@ -22,5 +25,32 @@ $email_body = "You have received a new message from your website contact form.\n
 $headers = "From: noreply@yourdomain.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $headers .= "Reply-To: $email_address";   
 mail($to,$email_subject,$email_body,$headers);
-return true;         
+return true;     
+
+// Check for empty fields
+$servername = "localhost";
+$username = "vruser";
+$password = "idmteam4";
+$dbname = "vr";
+
+// Create Connection to db
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check the connection
+if ($conn->connect_error) {
+	die("Connection failed: " . $conn->connect_error);
+}
+
+ 
+$sql="INSERT INTO nametable (email, message)
+VALUES
+('$_POST[email]','$_POST[lmessage]')";
+ 
+if (!mysql_query($sql,$con))
+  {
+  die('Error: ' . mysql_error());
+  }
+echo "1 record added";
+ 
+mysql_close($con)    
 ?>
+
