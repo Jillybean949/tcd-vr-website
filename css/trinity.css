@@ -213,12 +213,6 @@ fieldset[disabled] .btn-primary.active {
   background-color: #0067B2;
 }
 
-.center-justified {
-  text-align: justify;
-  margin-left: 40%;
-  margin-right: 40%;
-
-}
 
 @media (min-width: 768px) {
   .navbar-custom {
