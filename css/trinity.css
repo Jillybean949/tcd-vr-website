@@ -318,7 +318,7 @@ header .intro-text .intro-heading {
 
 .panel-default>.panel-heading {
 	color: #0067B2;
-  padding: 10px, 0px;
+  border-top-right-radius: 0;
 }
 
 .panel-default {
