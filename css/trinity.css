@@ -135,18 +135,12 @@ fieldset[disabled] .btn-primary.active {
 .glyphicon {
 	font-size: 80px;
 	text-align: center;
-	padding: 0%;
-}
-
-.glyphicon glyphicon-circle-arrow-down {
-
 }
 
 .btn-round.btn-lg {
 	text-align: center;
     width: 82px;
     height: 82px;
-    padding: 0%;
     border-radius: 50%;
     font-weight: 400;
 }
