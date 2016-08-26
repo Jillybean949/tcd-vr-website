@@ -1,13 +1,6 @@
 body {
   overflow-x: hidden;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  width: 100%;
-  margin: 0px;
-}
-
-.container {
-  padding-right: 0;
-  margin-right: 0;
 }
 
 .text-muted {
