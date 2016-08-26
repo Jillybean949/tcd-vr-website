@@ -393,6 +393,10 @@ img::-moz-selection {
   -moz-transition: all ease 0.5s;
 }
 
+.help-block {
+  color: #FFFFFF;
+}
+
 section#faq {
   background-color: #444444;
   background-image: url('../img/campanile-outline-redo.png');
