@@ -254,6 +254,7 @@ header {
   -o-background-size: cover;
   text-align: center;
   color: white;
+  padding: 0;
 }
 
 header .intro-text .intro-lead-in {
@@ -397,6 +398,7 @@ section#faq {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
