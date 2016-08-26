@@ -394,7 +394,8 @@ img::-moz-selection {
 }
 
 .help-block {
-  color: #FFFFFF;
+  color: #3BB8E8;
+  font-size: 14px;
 }
 
 section#faq {
