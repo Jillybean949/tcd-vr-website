@@ -385,6 +385,26 @@ img::-moz-selection {
   -moz-transition: all ease 0.5s;
 }
 
+.panorama {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 35px;
+  height: 0;
+  overflow: hidden;
+
+}
+
+
+.panorama iframe {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
