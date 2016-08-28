@@ -37,19 +37,9 @@
     
    <style>
     #panorama {
-        position: relative;
-        padding-bottom: 56.25%;
-        padding-top: 35px;
-        height: 0;
-        overflow: hidden;
-
-    }
-    #panorama iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        width: 600px;
+        height: 400px;
+        margin: auto;
     }
     </style>
 
@@ -849,13 +839,13 @@
                                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                 <!--<img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">-->
 
-                                <div id="panorama">
-                                <script>
+                                <div ="panorama">
+                                <!--<script>
                                 pannellum.viewer('panorama', {
                                 "type": "equirectangular",
                                 "panorama": "http://www.trinityvr.online/img/360front-square.jpg"
                                 });
-                                </script>
+                                </script>-->
 
                                 <iframe width="600" height="400" allowfullscreen style="border-style:none;" src="http://cdn.pannellum.org/2.2/pannellum.htm?panorama=http%3A//www.trinityvr.online/img/360front-square.jpg&title=Trinity%20VR%20-%20Front%20Square"></iframe>
                                 <!--<iframe width="600" height="400" allowfullscreen style="border-style:none;"src="https://www.scss.tcd.ie/~yfeng/FP/pano-fgate/2016-06-30tcdfrontgate.jpg"></iframe>-->
