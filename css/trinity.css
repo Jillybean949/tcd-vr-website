@@ -386,6 +386,9 @@ img::-moz-selection {
 }
 
 .panorama {
+
+  width: 600px;
+  height: 400px;
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 35px;
