@@ -80,9 +80,6 @@
             });
 
             //On close of the Modals, the video is stopped
-            $("#portfolioModal4").on('hidden.bs.modal', function (e) {
-                $("#portfolioModal4 iframe").attr("src", $("#portfolioModal4 iframe").attr("src"));
-            });
             $("#portfolioModal5").on('hidden.bs.modal', function (e) {
                 $("#portfolioModal5 iframe").attr("src", $("#portfolioModal5 iframe").attr("src"));
             });
@@ -851,7 +848,7 @@
                                 <p class="item-intro text-muted">Drag the image around for a full view</p>
                                 <!--<img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">-->
 
-                                <div id="panorama">
+                                <div id="panorama" class="video-container">
                                 <!--<script>
                                 pannellum.viewer('panorama', {
                                 "type": "equirectangular",
