@@ -1,5 +1,4 @@
 body {
-  overflow-x: hidden;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -314,13 +313,7 @@ header .intro-text .intro-heading {
   }
 }
 
-.panel-default>.panel-heading {
-	color: #0067B2;
-}
 
-.panel-default {
-  background-color: #E5E5E5;
-}
 
 footer span.copyright {
   line-height: 40px;
@@ -385,11 +378,7 @@ img::-moz-selection {
   -moz-transition: all ease 0.5s;
 }
 
-.panorama {
 
-  width: 600px;
-  height: 400px;
-}
 
 .video-container {
   position: relative;
@@ -410,6 +399,19 @@ img::-moz-selection {
 .help-block {
   color: #3BB8E8;
   font-size: 14px;
+}
+
+.panel-default>.panel-heading {
+  color: #0067B2;
+}
+
+.panel-default {
+  background-color: #E5E5E5;
+  margin-bottom: 40px;
+}
+
+.faqAnswer {
+  padding: 10px 20px 10px 20px;
 }
 
 section#faq {
