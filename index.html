@@ -76,8 +76,11 @@
                     method: 'feed',
                     link: 'http://www.trinityvr.online/#page-bottom',
                     caption: 'Trinity VR App'
-        }, function(response){});
-    });
+                }, function(response){});
+            });
+            $("#portfolioModal5").on('hidden.bs.modal', function (e) {
+                $("#portfolioModal5 iframe").attr("src", $("#portfolioModal5 iframe").attr("src"));
+            });
         };
     </script>
 
