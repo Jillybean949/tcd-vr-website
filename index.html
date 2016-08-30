@@ -78,8 +78,16 @@
                     caption: 'Trinity VR App'
                 }, function(response){});
             });
+
+            //On close of the Modals, the video is stopped
+            $("#portfolioModal4").on('hidden.bs.modal', function (e) {
+                $("#portfolioModal4 iframe").attr("src", $("#portfolioModal4 iframe").attr("src"));
+            });
             $("#portfolioModal5").on('hidden.bs.modal', function (e) {
                 $("#portfolioModal5 iframe").attr("src", $("#portfolioModal5 iframe").attr("src"));
+            });
+            $("#portfolioModal6").on('hidden.bs.modal', function (e) {
+                $("#portfolioModal6 iframe").attr("src", $("#portfolioModal6 iframe").attr("src"));
             });
         };
     </script>
