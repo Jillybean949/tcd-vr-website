@@ -415,6 +415,10 @@ img::-moz-selection {
   padding: 10px 20px 10px 20px;
 }
 
+section#about {
+  overflow-x: hidden;
+}
+
 
 section#faq {
   background-color: #444444;
