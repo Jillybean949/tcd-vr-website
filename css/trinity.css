@@ -51,13 +51,6 @@ h6 {
   margin: auto;
 }
 
-@media screen and (max-width: 768px) {
-    h2{
-        font-size:14px;
-    }
-}
-
-
 .navbar-custom .navbar-brand {
   color: #FFFFFF;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, cursive;
