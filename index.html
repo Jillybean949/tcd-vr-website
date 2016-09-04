@@ -79,11 +79,13 @@
                 $("#portfolioModal6 iframe").attr("src", $("#portfolioModal6 iframe").attr("src"));
             });
 
-            //If desktop remove click overlay
+            //If desktop remove click overlay + change font size
             if(!( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) ) {
                 var parent = document.getElementById("vrVideo");
                 var child = document.getElementById("mobileOverlay");
                 parent.removeChild(child);
+
+                $("#phoneAdjust").css("font-size", "1.2em");
             }
         };
     </script>
@@ -466,7 +468,7 @@
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
-                                <h2>Trinity<span style="font-weight:300">VR</span><br />
+                                <h2 id="phoneAdjust">Trinity<span style="font-weight:300">VR</span><br />
                                 Walkthrough</h2>
                                 <p class="item-intro text-muted">A brief demonstration of the app's features and functionalities.</p>
                                 <div class="video-container">
